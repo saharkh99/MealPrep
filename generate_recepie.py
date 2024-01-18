@@ -8,7 +8,7 @@ from os.path import join, dirname
 from dotenv import load_dotenv
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path, override=True)
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = ""
 class Meal :
     def create_meals(ingredients, kcal=2000):
         from openai import OpenAI
